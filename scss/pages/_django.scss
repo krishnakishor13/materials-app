@@ -1,0 +1,40 @@
+.section-django1 {
+  width: 100%;
+  padding: 0px 50px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: rgb(88, 86, 86);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.contentdjango {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #535151;
+}
+
+.contentdjango ul {
+  padding-left: 30px;
+  color: blue;
+  list-style-type: none;
+}
+
+.contentdjango li {
+  padding-left: 50px;
+  color: #555;
+  font-style: italic;
+}

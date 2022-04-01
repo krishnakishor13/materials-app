@@ -1,27 +1,3 @@
-section h1 {
-  font-size: 8vw;
-  text-align: center;
-  background: linear-gradient(
-    to right,
-    #ef5350,
-    #f48fb1,
-    #7e57c2,
-    #2196f3,
-    #26c6da,
-    #43a047,
-    #eeff41,
-    #f9a825,
-    #ff5722
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 6px 70px black;
-}
-
-.sec-1 {
-  padding: 100px;
-}
-
 .container {
   transition: all 0.3s ease-out;
   width: 100%;
@@ -32,12 +8,21 @@ section h1 {
   justify-content: center;
 }
 
+.container a {
+  color: #003b7a;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
 .container.card1 h3 {
   color: #262626;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 4px;
+  background-color: whitesmoke;
 }
 
 .container.card1 p {
@@ -46,6 +31,7 @@ section h1 {
     font-weight: 400;
     line-height: 20px;
     color: #666666;
+    background-color: #00838d;
 
     &.small {
       font-size: 14px;
@@ -70,20 +56,17 @@ section h1 {
 .go-arrow {
   margin-top: -4px;
   margin-right: -4px;
-  color: white;
-  font-family: courier, sans;
 }
 
 .card1 {
   display: block;
   position: relative;
   max-width: 262px;
-  background-color: #f2f8f9;
   border-radius: 4px;
   padding: 32px 24px;
   margin: 12px;
   text-decoration: none;
-  z-index: 0;
+  z-index: 1;
   overflow: hidden;
 
   &:before {
@@ -96,23 +79,85 @@ section h1 {
     height: 32px;
     width: 32px;
     border-radius: 32px;
-    transform: scale(1);
+    transform: scale(2);
     transform-origin: 50% 50%;
     transition: transform 0.25s ease-out;
   }
 
   &:hover:before {
-    transform: scale(21);
+    transform: scale(20);
   }
 }
 
 .card1:hover {
   p {
     transition: all 0.3s ease-out;
-    color: rgba(255, 255, 255, 0.8);
+    background: #00838d;
+    color: white;
   }
   h3 {
     transition: all 0.3s ease-out;
-    color: #ffffff;
+    background: #00838d;
+    color: whitesmoke;
   }
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
 }
