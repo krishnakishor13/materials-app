@@ -17,15 +17,27 @@
   </head>
   <body>
     <header>
-      <div class="contentheader">
-        <h2>Happy Learning</h2>
-        <h2>Happy Learning</h2>
-      </div>
+      <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">
+            D &nbsp;j &nbsp; a &nbsp; n &nbsp; g &nbsp; o
+          </text>
+        </symbol>
+        <g class="g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
     </header>
     <!-- Content -->
     <section>
       <div class="section-django1">
-        <button type="button" class="collapsible">Django Codes</button>
+        <button type="button" class="collapsible">
+          <span class="django">Django Codes</span>
+        </button>
         <div class="contentdjango">
           <button type="button" class="collapsible">For Windows →</button>
           <div class="contentdjango">
@@ -83,6 +95,7 @@
           <a href="#"><i class="icon ion-social-facebook"></i> </a>
         </div>
         <ul class="list-inline">
+          <li class="list-inline-item"><a href="/home.html">Home</a></li>
           <li class="list-inline-item"><a href="#">Services</a></li>
           <li class="list-inline-item"><a href="#">About</a></li>
           <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
