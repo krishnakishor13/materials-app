@@ -95,6 +95,69 @@
             Applications</i
           >
         </p>
+        <h6>Django Project Structure</h6>
+        <img
+          src="img/structure-djangoproject.png"
+          alt="django project structure"
+        />
+        <br /><br />
+        <h6>File Details</h6>
+        <p>
+          The <span class="highlited-text"> __init__.py </span> file is usually
+          empty, but can be used to export selected portions of the package
+          under more convenient name, hold convenience functions, etc.
+          <br /><br />
+          If you remove the __init__.py file, Python will no longer look for
+          submodules inside that directory, so attempts to import the module
+          will fail.
+          <span class="highlited-text">settings.py</span> It contains the Django
+          project configuration. <br />
+          Used for adding all the applications and middleware applications. This
+          is the main setting file of the Django project.
+          <br /><br />
+          <span class="highlited-text">urls.py</span>
+          URL is a universal resource locator, it contains all the endpoints
+          that we should have for the website. It is used to provide you the
+          address of the resources (images, webpages, websites, etc) that are
+          present out there on the internet.
+          <br />
+          <img src="img/url-structure.png" alt="url-structure" />
+          <br /><br />
+          <span class="highlited-text">wsgi.py</span>
+          WSGI stands for Web Server Gateway Interface, it describes the way how
+          servers interact with the applications. <br />
+          <img src="img/wsgi-struture.png" alt="wsgi-struture" />
+          <br /><br />
+          <span class="highlited-text">manage.py</span> is automatically created
+          in each Django project. manage.py is a thin wrapper around
+          django-admin.py that takes care of two things for you before
+          delegating to django-admin.py: It puts your project’s package on
+          sys.path. It sets the <i>DJANGO_SETTINGS_MODULE</i> environment
+          variable so that it points to your project’s
+          <span class="highlited-text">settings.py </span> file. <br />
+          <img src="img/manage-structure.png" alt="manage-structure" />
+        </p>
+      </div>
+      <div class="djangosection-2">
+        <h6>Django App Structure</h6>
+        <img src="img/app-structure.png" alt="django app structure" />
+        <br /><br />
+        <h6>File Details</h6>
+        <p>
+          <span class="highlited-text">admin.py</span> file is used for
+          registering the Django models into the Django administration. It is
+          used to display the Django model in the Django admin panel. It
+          performs three major tasks: <br />
+          <br />
+          → Registering models <br />
+          → Creating super user <br />
+          → Logging and using web application <br /><br />
+          <img src="img/app-admin.png" alt="app-admin" /><br /><br />
+          <span class="highlited-text">apps.py</span> is a file that is used to
+          help the user include the application configuration for their app.
+          Users can configure the attributes of their application using the
+          apps.py file.
+        </p>
       </div>
     </section>
     <!-- Footer -->
