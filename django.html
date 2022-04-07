@@ -156,8 +156,62 @@
           <span class="highlited-text">apps.py</span> is a file that is used to
           help the user include the application configuration for their app.
           Users can configure the attributes of their application using the
-          apps.py file.
+          apps.py file. <br /><br />
+          <img src="img/app-models.png" alt="models" /> <br /><br />
+          <span class="highlited-text">models.py</span> represents the model of
+          the web applications in the form of classess. It contains the
+          essential fields and behaviour of the data that the app is storing.
+          <br /><br />
+          → Each model is a Python class that subclasses
+          <span class="highlited-text">django.db.models.Model.</span> <br />
+          → Each attribute of the model represents a database field.
+          <br /><br />
+          <span class="highlited-text">views.py</span> provide an interface
+          through which a user interacts with a Django web application. It
+          consists of Python functions or classes that receive a web request and
+          return a web response. The response can be a simple HTTP response, an
+          HTML template response, or an HTTP redirect response that redirects a
+          user to another page. <br />
+          <img src="img/app-views.png" alt="views" /><br /><br />
+          <span class="highlited-text">urls.py</span> is same as that of in
+          Project file structure. It is used for linking the user’s URL request
+          to the corresponding pages it is pointing to. The user should create
+          the file after creating each application. <br /><br />
+          <span class="highlited-text">tests.py</span> allows the user to write
+          test code for their web applications. It is used to test the working
+          of the app.
         </p>
+        <hr />
+        <div class="section-django1">
+          <button type="button" class="collapsible">
+            <span class="django"> → Summary</span>
+          </button>
+          <div class="contentdjango">
+            <p>→ Djanog is based on MVT architecture (Model View Tempalte).</p>
+            <p>
+              → It is a software developing design pattern for developing a web
+              application
+            </p>
+            <p>
+              <span class="highlited-text">Models:</span> The model is going to
+              act as the interface of your data. It is responsible for
+              maintaining data. It is the logical data structure behind the
+              entire application and is represented by a database (generally
+              relational databases such as MySql, Postgres)
+            </p>
+            <p>
+              <span class="highlited-text">Views:</span> View: The View is the
+              user interface — what you see in your browser when you render a
+              website.
+            </p>
+            <p>
+              <span class="highlited-text">Templates:</span> Template: A
+              template consists of static parts of the desired HTML output as
+              well as some special syntax describing how dynamic content will be
+              inserted.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Footer -->
